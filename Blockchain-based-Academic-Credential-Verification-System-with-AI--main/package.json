@@ -1,0 +1,33 @@
+{
+  "name": "academic-credential-verification",
+  "version": "1.0.0",
+  "description": "Blockchain-based academic credential verification system to prevent fake university degrees",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "node": "hardhat node",
+    "frontend": "cd frontend && npm start",
+    "install-all": "npm install && cd frontend && npm install",
+    "dev": "concurrently \"npm run node\" \"npm run deploy\" \"npm run frontend\""
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "smart-contracts",
+    "academic-credentials",
+    "verification"
+  ],
+  "author": "Arun Pandey",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

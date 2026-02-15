@@ -1,0 +1,35 @@
+{
+  "name": "blockverify-email-service",
+  "version": "1.0.0",
+  "description": "Email OTP service for BlockVerify",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "email",
+    "otp",
+    "verification"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.13.2",
+    "canvas": "^3.2.0",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.2",
+    "jsqr": "^1.4.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^6.9.7",
+    "pdf-poppler": "^0.2.3",
+    "string-similarity": "^4.0.4",
+    "tesseract.js": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
